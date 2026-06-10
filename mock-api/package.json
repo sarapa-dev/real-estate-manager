@@ -1,0 +1,13 @@
+{
+  "name": "mock-api",
+  "version": "1.0.0",
+  "description": "Mock api for Real Estate Reservation Manager",
+  "license": "MIT",
+  "author": "sarapa-dev",
+  "scripts": {
+    "api": "npx json-server db.json -p 7000"
+  },
+  "dependencies": {
+    "json-server": "^1.0.0-beta.15"
+  }
+}

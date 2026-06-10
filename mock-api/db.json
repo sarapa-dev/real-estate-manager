@@ -1,0 +1,808 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Aleksandar Kovačević",
+      "email": "agent@agencija.rs",
+      "password": "admin123",
+      "role": "admin"
+    }
+  ],
+
+  "properties": [
+    {
+      "id": "1",
+      "title": "Dvosoban stan kod Hrama Svetog Save",
+      "type": "apartment",
+      "purpose": "sale",
+      "status": "active",
+      "city": "Beograd",
+      "municipality": "Vračar",
+      "address": "Kursulina 12",
+      "price": 185000,
+      "currency": "EUR",
+      "squareMeters": 58,
+      "rooms": 2.0,
+      "floor": 3,
+      "totalFloors": 6,
+      "yearBuilt": 2018,
+      "imageUrl": "https://picsum.photos/seed/prop1/800/600",
+      "gallery": [
+        "https://picsum.photos/seed/prop1a/800/600",
+        "https://picsum.photos/seed/prop1b/800/600",
+        "https://picsum.photos/seed/prop1c/800/600"
+      ],
+      "features": ["parking", "terrace", "elevator"],
+      "description": "Lep dvosoban stan u odličnom stanju, renoviran 2022. godine. Stan se nalazi u mirnoj ulici u blizini Hrama Svetog Save. Odlična lokacija, blizu javnog prevoza, škola i prodavnica. Idealan za porodicu ili kao investicija.",
+      "agent": {
+        "name": "Aleksandar Kovačević",
+        "phone": "+381631111111",
+        "email": "agent@agencija.rs"
+      },
+      "createdAt": "2026-06-01T10:00:00"
+    },
+    {
+      "id": "2",
+      "title": "Jednoiposoban stan na Novom Beogradu",
+      "type": "apartment",
+      "purpose": "sale",
+      "status": "reserved",
+      "city": "Beograd",
+      "municipality": "Novi Beograd",
+      "address": "Bulevar Mihajla Pupina 38",
+      "price": 125000,
+      "currency": "EUR",
+      "squareMeters": 45,
+      "rooms": 1.5,
+      "floor": 7,
+      "totalFloors": 12,
+      "yearBuilt": 2020,
+      "imageUrl": "https://picsum.photos/seed/prop2/800/600",
+      "gallery": [
+        "https://picsum.photos/seed/prop2a/800/600",
+        "https://picsum.photos/seed/prop2b/800/600"
+      ],
+      "features": ["elevator", "central_heating", "new_build"],
+      "description": "Funkcionalan jednoiposoban stan u novogradnji na Novom Beogradu. Zgrada sa obezbeđenjem, podzemnom garažom i lifom. Stan je u punoj opremi, useljivost odmah. Pogled na Savu.",
+      "agent": {
+        "name": "Aleksandar Kovačević",
+        "phone": "+381631111111",
+        "email": "agent@agencija.rs"
+      },
+      "createdAt": "2026-06-02T12:00:00"
+    },
+    {
+      "id": "3",
+      "title": "Porodična kuća sa placem u Zemunu",
+      "type": "house",
+      "purpose": "sale",
+      "status": "active",
+      "city": "Beograd",
+      "municipality": "Zemun",
+      "address": "Gardoška 7",
+      "price": 280000,
+      "currency": "EUR",
+      "squareMeters": 180,
+      "rooms": 4.0,
+      "floor": 2,
+      "totalFloors": 2,
+      "yearBuilt": 2005,
+      "imageUrl": "https://picsum.photos/seed/prop3/800/600",
+      "gallery": [
+        "https://picsum.photos/seed/prop3a/800/600",
+        "https://picsum.photos/seed/prop3b/800/600",
+        "https://picsum.photos/seed/prop3c/800/600",
+        "https://picsum.photos/seed/prop3d/800/600"
+      ],
+      "features": ["parking", "terrace", "central_heating"],
+      "description": "Prostrana porodična kuća u mirnom delu Zemuna. Kuća se sastoji od prizemlja i prvog sprata, sa odvojenom garažom i lepim dvorištem od 350m². Sve prostorije su svetle i funkcionalnog rasporeda. Blizina škole i vrtića.",
+      "agent": {
+        "name": "Aleksandar Kovačević",
+        "phone": "+381631111111",
+        "email": "agent@agencija.rs"
+      },
+      "createdAt": "2026-05-31T14:00:00"
+    },
+    {
+      "id": "4",
+      "title": "Poslovni prostor u centru Beograda",
+      "type": "local",
+      "purpose": "rent",
+      "status": "active",
+      "city": "Beograd",
+      "municipality": "Stari Grad",
+      "address": "Knez Mihailova 22",
+      "price": 900,
+      "currency": "EUR",
+      "squareMeters": 65,
+      "rooms": null,
+      "floor": 0,
+      "totalFloors": 1,
+      "yearBuilt": 2000,
+      "imageUrl": "https://picsum.photos/seed/prop4/800/600",
+      "gallery": [
+        "https://picsum.photos/seed/prop4a/800/600",
+        "https://picsum.photos/seed/prop4b/800/600"
+      ],
+      "features": ["central_heating"],
+      "description": "Ekskluzivan poslovni prostor na Knez Mihailovoj ulici, jednoj od najprometnijih pešačkih zona u Srbiji. Prostor je u savršenom stanju, sa velikim izlogom i sopstvenim toaletom. Idealan za butik, ordinaciju ili predstavništvo.",
+      "agent": {
+        "name": "Aleksandar Kovačević",
+        "phone": "+381631111111",
+        "email": "agent@agencija.rs"
+      },
+      "createdAt": "2026-06-01T11:00:00"
+    },
+    {
+      "id": "5",
+      "title": "Građevinski plac blizu centra Novog Sada",
+      "type": "plot",
+      "purpose": "sale",
+      "status": "active",
+      "city": "Novi Sad",
+      "municipality": "Liman",
+      "address": "Cara Lazara bb",
+      "price": 35000,
+      "currency": "EUR",
+      "squareMeters": 500,
+      "rooms": null,
+      "floor": null,
+      "totalFloors": null,
+      "yearBuilt": null,
+      "imageUrl": "https://picsum.photos/seed/prop5/800/600",
+      "gallery": ["https://picsum.photos/seed/prop5a/800/600"],
+      "features": [],
+      "description": "Odličan građevinski plac u atraktivnoj lokaciji na Limanu. Plac je priključen na svu infrastrukturu: struja, voda, kanalizacija, gas. Urbanistički plan dozovljava gradnju stambene zgrade P+4. Idealno za investitore.",
+      "agent": {
+        "name": "Aleksandar Kovačević",
+        "phone": "+381631111111",
+        "email": "agent@agencija.rs"
+      },
+      "createdAt": "2026-06-03T14:00:00"
+    },
+    {
+      "id": "6",
+      "title": "Trosoban stan u Novom Sadu — PRODAT",
+      "type": "apartment",
+      "purpose": "sale",
+      "status": "sold",
+      "city": "Novi Sad",
+      "municipality": "Podbara",
+      "address": "Jovana Subotića 14",
+      "price": 145000,
+      "currency": "EUR",
+      "squareMeters": 72,
+      "rooms": 3.0,
+      "floor": 4,
+      "totalFloors": 8,
+      "yearBuilt": 2015,
+      "imageUrl": "https://picsum.photos/seed/prop6/800/600",
+      "gallery": [
+        "https://picsum.photos/seed/prop6a/800/600",
+        "https://picsum.photos/seed/prop6b/800/600"
+      ],
+      "features": ["elevator", "parking", "central_heating"],
+      "description": "Lep trosoban stan u mirnom delu Novog Sada. Stan je renoviran i useljiv odmah. Prodat u junu 2026.",
+      "agent": {
+        "name": "Aleksandar Kovačević",
+        "phone": "+381631111111",
+        "email": "agent@agencija.rs"
+      },
+      "createdAt": "2026-06-04T13:00:00"
+    },
+    {
+      "id": "7",
+      "title": "Jednosoban stan na Voždovcu — izdavanje",
+      "type": "apartment",
+      "purpose": "rent",
+      "status": "active",
+      "city": "Beograd",
+      "municipality": "Voždovac",
+      "address": "Kumodraška 55",
+      "price": 500,
+      "currency": "EUR",
+      "squareMeters": 38,
+      "rooms": 1.0,
+      "floor": 2,
+      "totalFloors": 4,
+      "yearBuilt": 2010,
+      "imageUrl": "https://picsum.photos/seed/prop7/800/600",
+      "gallery": [
+        "https://picsum.photos/seed/prop7a/800/600",
+        "https://picsum.photos/seed/prop7b/800/600"
+      ],
+      "features": ["furnished", "central_heating"],
+      "description": "Manji jednosoban stan u dobrom stanju, nameštен i odmah useljivи. Zgrada ima interfon, a u blizini se nalazi tramvajska stanica. Pogodan za jednu osobu ili par.",
+      "agent": {
+        "name": "Aleksandar Kovačević",
+        "phone": "+381631111111",
+        "email": "agent@agencija.rs"
+      },
+      "createdAt": "2026-06-05T13:00:00"
+    },
+    {
+      "id": "8",
+      "title": "Apartman na Kopaoniku — sezonsko izdavanje",
+      "type": "apartment",
+      "purpose": "rent",
+      "status": "active",
+      "city": "Kopaonik",
+      "municipality": "Kopaonik",
+      "address": "Sunčana dolina bb",
+      "price": 800,
+      "currency": "EUR",
+      "squareMeters": 35,
+      "rooms": 1.5,
+      "floor": 1,
+      "totalFloors": 3,
+      "yearBuilt": 2019,
+      "imageUrl": "https://picsum.photos/seed/prop8/800/600",
+      "gallery": [
+        "https://picsum.photos/seed/prop8a/800/600",
+        "https://picsum.photos/seed/prop8b/800/600",
+        "https://picsum.photos/seed/prop8c/800/600"
+      ],
+      "features": ["furnished", "parking", "new_build"],
+      "description": "Moderan apartman u skijaškom resortu na Kopaoniku. Apartman je potpuno opremljen i nameštén, sa direktnim pogledom na ski staze. Dostupan za sezonski najam, moguće i mesečno. Odlična investicija.",
+      "agent": {
+        "name": "Aleksandar Kovačević",
+        "phone": "+381631111111",
+        "email": "agent@agencija.rs"
+      },
+      "createdAt": "2026-06-06T14:00:00"
+    },
+    {
+      "id": "9",
+      "title": "Kuća sa okućnicom u Nišu",
+      "type": "house",
+      "purpose": "sale",
+      "status": "active",
+      "city": "Niš",
+      "municipality": "Medijana",
+      "address": "Vojvode Mišića 31",
+      "price": 175000,
+      "currency": "EUR",
+      "squareMeters": 150,
+      "rooms": 4.0,
+      "floor": 2,
+      "totalFloors": 2,
+      "yearBuilt": 1998,
+      "imageUrl": "https://picsum.photos/seed/prop9/800/600",
+      "gallery": [
+        "https://picsum.photos/seed/prop9a/800/600",
+        "https://picsum.photos/seed/prop9b/800/600"
+      ],
+      "features": ["parking", "terrace", "central_heating"],
+      "description": "Prostrana kuća u mirnom delu Niša sa velikim dvorištem od 400m². Kuća je u solidnom stanju, potrebna manja renoviranja. Kompletna infrastruktura priključena. Pogodna za veliku porodicu.",
+      "agent": {
+        "name": "Aleksandar Kovačević",
+        "phone": "+381631111111",
+        "email": "agent@agencija.rs"
+      },
+      "createdAt": "2026-06-05T18:00:00"
+    },
+    {
+      "id": "10",
+      "title": "Dvosoban stan u Subotici",
+      "type": "apartment",
+      "purpose": "sale",
+      "status": "active",
+      "city": "Subotica",
+      "municipality": "Centar",
+      "address": "Trg Republike 8",
+      "price": 75000,
+      "currency": "EUR",
+      "squareMeters": 55,
+      "rooms": 2.0,
+      "floor": 3,
+      "totalFloors": 5,
+      "yearBuilt": 2008,
+      "imageUrl": "https://picsum.photos/seed/prop10/800/600",
+      "gallery": [
+        "https://picsum.photos/seed/prop10a/800/600",
+        "https://picsum.photos/seed/prop10b/800/600"
+      ],
+      "features": ["elevator", "central_heating"],
+      "description": "Prostran dvosoban stan u centru Subotice, u blizini glavnog gradskog trga. Stan je u dobrom stanju, sa balkonom i ostavljanjem. Odlična lokacija za svakodnevni život.",
+      "agent": {
+        "name": "Aleksandar Kovačević",
+        "phone": "+381631111111",
+        "email": "agent@agencija.rs"
+      },
+      "createdAt": "2026-06-07T16:00:00"
+    },
+    {
+      "id": "11",
+      "title": "Poslovni prostor u Novom Sadu — IZDAT",
+      "type": "local",
+      "purpose": "rent",
+      "status": "rented",
+      "city": "Novi Sad",
+      "municipality": "Centar",
+      "address": "Zmaj Jovina 5",
+      "price": 1200,
+      "currency": "EUR",
+      "squareMeters": 80,
+      "rooms": null,
+      "floor": 0,
+      "totalFloors": 1,
+      "yearBuilt": 2003,
+      "imageUrl": "https://picsum.photos/seed/prop11/800/600",
+      "gallery": ["https://picsum.photos/seed/prop11a/800/600"],
+      "features": ["central_heating"],
+      "description": "Reprezentativan poslovni prostor u strogom centru Novog Sada. Prostor je u odličnom stanju, klimatizovan, sa dva toaleta i magacinom. Trenutno izdat do kraja 2026. godine.",
+      "agent": {
+        "name": "Aleksandar Kovačević",
+        "phone": "+381631111111",
+        "email": "agent@agencija.rs"
+      },
+      "createdAt": "2026-06-06T19:00:00"
+    },
+    {
+      "id": "12",
+      "title": "Trosoban stan na Zvezdari sa terasom",
+      "type": "apartment",
+      "purpose": "sale",
+      "status": "active",
+      "city": "Beograd",
+      "municipality": "Zvezdara",
+      "address": "Vojvode Stepe 189",
+      "price": 215000,
+      "currency": "EUR",
+      "squareMeters": 82,
+      "rooms": 3.0,
+      "floor": 5,
+      "totalFloors": 8,
+      "yearBuilt": 2016,
+      "imageUrl": "https://picsum.photos/seed/prop12/800/600",
+      "gallery": [
+        "https://picsum.photos/seed/prop12a/800/600",
+        "https://picsum.photos/seed/prop12b/800/600",
+        "https://picsum.photos/seed/prop12c/800/600"
+      ],
+      "features": ["terrace", "elevator", "parking", "central_heating"],
+      "description": "Odličan trosoban stan sa velikom terasom od 15m² i pogledom na grad. Stan je u odličnom stanju, useljivи odmah. Ima garažno mesto u podzemnoj garaži. Blizu tržnog centra i škole.",
+      "agent": {
+        "name": "Aleksandar Kovačević",
+        "phone": "+381631111111",
+        "email": "agent@agencija.rs"
+      },
+      "createdAt": "2026-06-07T15:00:00"
+    },
+    {
+      "id": "13",
+      "title": "Građevinski plac u Kragujevcu",
+      "type": "plot",
+      "purpose": "sale",
+      "status": "active",
+      "city": "Kragujevac",
+      "municipality": "Aerodrom",
+      "address": "Vojvode Putnika bb",
+      "price": 28000,
+      "currency": "EUR",
+      "squareMeters": 800,
+      "rooms": null,
+      "floor": null,
+      "totalFloors": null,
+      "yearBuilt": null,
+      "imageUrl": "https://picsum.photos/seed/prop13/800/600",
+      "gallery": ["https://picsum.photos/seed/prop13a/800/600"],
+      "features": [],
+      "description": "Ravni građevinski plac u novom stambenom naselju u Kragujevcu. Sva infrastruktura u ulici. Regulacioni plan dozvoljava individualni stambeni objekat P+1+Pk. Odlična investicija u razvijajućem naselju.",
+      "agent": {
+        "name": "Aleksandar Kovačević",
+        "phone": "+381631111111",
+        "email": "agent@agencija.rs"
+      },
+      "createdAt": "2026-06-06T21:00:00"
+    },
+    {
+      "id": "14",
+      "title": "Moderna kuća u Rakovici — REZERVISANA",
+      "type": "house",
+      "purpose": "sale",
+      "status": "reserved",
+      "city": "Beograd",
+      "municipality": "Rakovica",
+      "address": "Patrijarha Dimitrija 41",
+      "price": 310000,
+      "currency": "EUR",
+      "squareMeters": 220,
+      "rooms": 4.0,
+      "floor": 3,
+      "totalFloors": 3,
+      "yearBuilt": 2012,
+      "imageUrl": "https://picsum.photos/seed/prop14/800/600",
+      "gallery": [
+        "https://picsum.photos/seed/prop14a/800/600",
+        "https://picsum.photos/seed/prop14b/800/600",
+        "https://picsum.photos/seed/prop14c/800/600"
+      ],
+      "features": ["parking", "terrace", "elevator", "central_heating"],
+      "description": "Reprezentativna kuća P+1+Pk u mirnom delu Rakovice. Kompletno renovirana 2020. godine. Kuća ima 4 spavaće sobe, dve kupaonice, veliku terasu i garažu za 2 vozila. Odlično stanje.",
+      "agent": {
+        "name": "Aleksandar Kovačević",
+        "phone": "+381631111111",
+        "email": "agent@agencija.rs"
+      },
+      "createdAt": "2026-06-08T12:00:00"
+    },
+    {
+      "id": "15",
+      "title": "Jednoiposoban stan na Paliluli — izdavanje",
+      "type": "apartment",
+      "purpose": "rent",
+      "status": "active",
+      "city": "Beograd",
+      "municipality": "Palilula",
+      "address": "Cara Dušana 83",
+      "price": 550,
+      "currency": "EUR",
+      "squareMeters": 43,
+      "rooms": 1.5,
+      "floor": 1,
+      "totalFloors": 6,
+      "yearBuilt": 2007,
+      "imageUrl": "https://picsum.photos/seed/prop15/800/600",
+      "gallery": [
+        "https://picsum.photos/seed/prop15a/800/600",
+        "https://picsum.photos/seed/prop15b/800/600"
+      ],
+      "features": ["furnished", "central_heating"],
+      "description": "Komforan jednoiposoban stan u blizini Dunava. Stan je kompletno nameštén i spreman za useljivost. Komunalni troškovi nisu uključeni u cenu. Minimalni period najma 12 meseci.",
+      "agent": {
+        "name": "Aleksandar Kovačević",
+        "phone": "+381631111111",
+        "email": "agent@agencija.rs"
+      },
+      "createdAt": "2026-06-10T09:00:00"
+    },
+    {
+      "id": "16",
+      "title": "Luksuzni trosoban stan na Savskom Vencu",
+      "type": "apartment",
+      "purpose": "sale",
+      "status": "active",
+      "city": "Beograd",
+      "municipality": "Savski Venac",
+      "address": "Kneza Miloša 71",
+      "price": 265000,
+      "currency": "EUR",
+      "squareMeters": 95,
+      "rooms": 3.0,
+      "floor": 8,
+      "totalFloors": 10,
+      "yearBuilt": 2021,
+      "imageUrl": "https://picsum.photos/seed/prop16/800/600",
+      "gallery": [
+        "https://picsum.photos/seed/prop16a/800/600",
+        "https://picsum.photos/seed/prop16b/800/600",
+        "https://picsum.photos/seed/prop16c/800/600"
+      ],
+      "features": ["elevator", "parking", "terrace", "central_heating", "new_build"],
+      "description": "Ekskluzivan trosoban stan u luksuznoj novogradnji u diplomatskom delu grada. Visoki plafoni, premium materijali, dva parkinga u podzemnoj garaži. Panoramski pogled na Savu i grad.",
+      "agent": {
+        "name": "Aleksandar Kovačević",
+        "phone": "+381631111111",
+        "email": "agent@agencija.rs"
+      },
+      "createdAt": "2026-06-09T08:15:00"
+    },
+    {
+      "id": "17",
+      "title": "Garsonjera na Čukarici",
+      "type": "apartment",
+      "purpose": "sale",
+      "status": "active",
+      "city": "Beograd",
+      "municipality": "Čukarica",
+      "address": "Požeška 34",
+      "price": 62000,
+      "currency": "EUR",
+      "squareMeters": 28,
+      "rooms": 0.5,
+      "floor": 2,
+      "totalFloors": 5,
+      "yearBuilt": 2014,
+      "imageUrl": "https://picsum.photos/seed/prop17/800/600",
+      "gallery": [
+        "https://picsum.photos/seed/prop17a/800/600",
+        "https://picsum.photos/seed/prop17b/800/600"
+      ],
+      "features": ["elevator", "central_heating"],
+      "description": "Funkcionalna garsonjera u dobrom stanju, blizu BIG shopping centra i tramvajske linije. Idealna kao prva nekretnina ili investicija za izdavanje. Odmah useljivа.",
+      "agent": {
+        "name": "Aleksandar Kovačević",
+        "phone": "+381631111111",
+        "email": "agent@agencija.rs"
+      },
+      "createdAt": "2026-06-10T07:30:00"
+    }
+  ],
+
+  "clients": [
+    {
+      "id": "1",
+      "name": "Marko Marković",
+      "email": "marko@example.com",
+      "phone": "+381601234567",
+      "interestType": "buy",
+      "budgetFrom": 150000,
+      "budgetTo": 220000,
+      "preferredCities": ["Beograd"],
+      "notes": "Traži dvosoban stan blizu centra Beograda, preferira Vračar ili Savski Venac. Planira kupovinu u naredna 3 meseca."
+    },
+    {
+      "id": "2",
+      "name": "Jelena Petrović",
+      "email": "jelena.petrovic@example.com",
+      "phone": "+381641234567",
+      "interestType": "buy",
+      "budgetFrom": 80000,
+      "budgetTo": 150000,
+      "preferredCities": ["Novi Sad"],
+      "notes": "Zainteresovana za stan u Novom Sadu, preferira novogradnju ili potpuno renovirane stanove. Bitan joj je lift."
+    },
+    {
+      "id": "3",
+      "name": "Stefan Nikolić",
+      "email": "stefan.nikolic@example.com",
+      "phone": "+381691234567",
+      "interestType": "rent",
+      "budgetFrom": 400,
+      "budgetTo": 600,
+      "preferredCities": ["Beograd"],
+      "notes": "Traži jednosoban ili jednoiposoban stan za izdavanje u Beogradu. Potrebno namešten stan, useljivost odmah."
+    },
+    {
+      "id": "4",
+      "name": "Ana Jovanović",
+      "email": "ana.jovanovic@example.com",
+      "phone": "+381631234567",
+      "interestType": "buy",
+      "budgetFrom": 200000,
+      "budgetTo": 320000,
+      "preferredCities": ["Beograd"],
+      "notes": "Traži kuću ili veći trosoban/četvorosoban stan za porodicu. Preferira mirnu lokaciju sa dvorištem ili terasom. Fleksibilna po opštini."
+    },
+    {
+      "id": "5",
+      "name": "Dragan Stojanović",
+      "email": "dragan.stojanovic@example.com",
+      "phone": "+381611234567",
+      "interestType": "rent",
+      "budgetFrom": 700,
+      "budgetTo": 1300,
+      "preferredCities": ["Beograd", "Novi Sad"],
+      "notes": "Zainteresovan za poslovne prostore za iznajmljivanje. Potrebna kvadratura 60-100m², lokacija u centru ili na prometnoj ulici."
+    },
+    {
+      "id": "6",
+      "name": "Milica Đorđević",
+      "email": "milica.djordjevic@example.com",
+      "phone": "+381621234567",
+      "interestType": "buy",
+      "budgetFrom": 55000,
+      "budgetTo": 90000,
+      "preferredCities": ["Subotica", "Niš"],
+      "notes": "Traži manji stan, jednosoban ili dvosoban, u Subotici ili Nišu. Studentski budžet, ali ozbiljna u nameri kupovine."
+    },
+    {
+      "id": "7",
+      "name": "Nikola Ilić",
+      "email": "nikola.ilic@example.com",
+      "phone": "+381651234567",
+      "interestType": "buy",
+      "budgetFrom": 250000,
+      "budgetTo": 380000,
+      "preferredCities": ["Beograd"],
+      "notes": "Zainteresovan za kuće i luksuzne stanove u Beogradu. Prioritet su Zemun, Dedinje ili Savski Venac. Može platiti odmah."
+    },
+    {
+      "id": "8",
+      "name": "Tamara Lazić",
+      "email": "tamara.lazic@example.com",
+      "phone": "+381661234567",
+      "interestType": "rent",
+      "budgetFrom": 450,
+      "budgetTo": 650,
+      "preferredCities": ["Beograd"],
+      "notes": "Traži stan za izdavanje, idealno nameštén sa centralnim grejanjem. Preferira Palilulu, Voždovac ili Zvezdaru. Dolazi sama."
+    }
+  ],
+
+  "reservations": [
+    {
+      "id": "1",
+      "propertyId": "1",
+      "clientId": "1",
+      "date": "2026-06-15",
+      "time": "17:00",
+      "status": "new",
+      "notes": "Klijent dolazi sa suprugom. Zainteresovani za cenu i mogućnost povoljnije kupovine.",
+      "createdAt": "2026-06-08T09:15:00"
+    },
+    {
+      "id": "2",
+      "propertyId": "1",
+      "clientId": "4",
+      "date": "2026-06-18",
+      "time": "10:00",
+      "status": "confirmed",
+      "notes": "Klientkinja želi da vidi stan za porodicu. Dolazi sa mužem i detetom.",
+      "createdAt": "2026-06-07T14:30:00"
+    },
+    {
+      "id": "3",
+      "propertyId": "2",
+      "clientId": "2",
+      "date": "2026-06-12",
+      "time": "14:00",
+      "status": "confirmed",
+      "notes": "Jelena je veoma zainteresovana, verovatno dolazi do dogovora. Povela je i roditelje.",
+      "createdAt": "2026-06-05T11:00:00"
+    },
+    {
+      "id": "4",
+      "propertyId": "3",
+      "clientId": "7",
+      "date": "2026-06-20",
+      "time": "11:00",
+      "status": "new",
+      "notes": "Nikola traži kuću za porodicu, ovo mu je treća nekretnina u razmatranju.",
+      "createdAt": "2026-06-09T10:00:00"
+    },
+    {
+      "id": "5",
+      "propertyId": "5",
+      "clientId": "6",
+      "date": "2026-06-22",
+      "time": "15:00",
+      "status": "new",
+      "notes": "Milica razmatra kupovinu placa za izgradnju. Pita za uslove kreditiranja.",
+      "createdAt": "2026-06-09T16:45:00"
+    },
+    {
+      "id": "6",
+      "propertyId": "7",
+      "clientId": "3",
+      "date": "2026-06-14",
+      "time": "18:00",
+      "status": "confirmed",
+      "notes": "Stefan može odmah da se useli. Traži minimalan rok najma od 6 meseci.",
+      "createdAt": "2026-06-06T12:00:00"
+    },
+    {
+      "id": "7",
+      "propertyId": "8",
+      "clientId": "5",
+      "date": "2026-06-16",
+      "time": "10:00",
+      "status": "new",
+      "notes": "Dragan razmatra apartman na Kopaoniku za poslovne goste. Želi info o ceni za duži najam.",
+      "createdAt": "2026-06-08T17:00:00"
+    },
+    {
+      "id": "8",
+      "propertyId": "9",
+      "clientId": "4",
+      "date": "2026-06-17",
+      "time": "12:00",
+      "status": "new",
+      "notes": "Ana razmatra kuću u Nišu jer njen muž dobija posao tamo. Dogovoriće se o preseljenju.",
+      "createdAt": "2026-06-09T08:30:00"
+    },
+    {
+      "id": "9",
+      "propertyId": "12",
+      "clientId": "7",
+      "date": "2026-06-25",
+      "time": "16:00",
+      "status": "new",
+      "notes": "Nikola razmatra stan na Zvezdari kao alternativu kući. Prioritet mu je terasa.",
+      "createdAt": "2026-06-09T13:00:00"
+    },
+    {
+      "id": "10",
+      "propertyId": "14",
+      "clientId": "4",
+      "date": "2026-06-11",
+      "time": "09:00",
+      "status": "confirmed",
+      "notes": "Ana dolazi da ponovo razgleda kuću u Rakovici. Prethodni obilazak je bio odličan, očekuje se ponuda.",
+      "createdAt": "2026-06-03T10:00:00"
+    },
+    {
+      "id": "11",
+      "propertyId": "6",
+      "clientId": "2",
+      "date": "2026-06-01",
+      "time": "11:00",
+      "status": "completed",
+      "notes": "Obilazak obavljen. Jelena zadovoljna stanom, dogovorena kupoprodaja. Stan prodat.",
+      "createdAt": "2026-05-28T09:00:00"
+    },
+    {
+      "id": "12",
+      "propertyId": "11",
+      "clientId": "5",
+      "date": "2026-06-03",
+      "time": "15:00",
+      "status": "completed",
+      "notes": "Obilazak obavljen. Dragan uzeo prostor za 12 meseci. Ugovor potpisan.",
+      "createdAt": "2026-05-30T11:00:00"
+    },
+    {
+      "id": "13",
+      "propertyId": "3",
+      "clientId": "1",
+      "date": "2026-06-05",
+      "time": "10:00",
+      "status": "cancelled",
+      "notes": "Marko otkazao zbog porodičnih obaveza. Zakazati novi termin.",
+      "createdAt": "2026-06-01T14:00:00"
+    },
+    {
+      "id": "14",
+      "propertyId": "15",
+      "clientId": "8",
+      "date": "2026-06-16",
+      "time": "14:00",
+      "status": "new",
+      "notes": "Tamara zainteresovana za stan na Paliluli, jedina nekretnina u njenom budžetu sa centralnim grejanjem.",
+      "createdAt": "2026-06-09T15:00:00"
+    },
+    {
+      "id": "15",
+      "propertyId": "1",
+      "clientId": "8",
+      "date": "2026-06-10",
+      "time": "17:00",
+      "status": "confirmed",
+      "notes": "Tamara gleda stan na Vračaru kao alternativu. Obilazak danas popodne.",
+      "createdAt": "2026-06-09T18:00:00"
+    },
+    {
+      "id": "16",
+      "propertyId": "12",
+      "clientId": "3",
+      "date": "2026-06-10",
+      "time": "12:00",
+      "status": "new",
+      "notes": "Stefan razmatra i veći stan ako je cena prihvatljiva za dugoročni najam.",
+      "createdAt": "2026-06-10T08:00:00"
+    }
+  ],
+
+  "cities": [
+    { "id": "1", "name": "Beograd" },
+    { "id": "2", "name": "Novi Sad" },
+    { "id": "3", "name": "Niš" },
+    { "id": "4", "name": "Kragujevac" },
+    { "id": "5", "name": "Subotica" },
+    { "id": "6", "name": "Kopaonik" },
+    { "id": "7", "name": "Zlatibor" },
+    { "id": "8", "name": "Zrenjanin" }
+  ],
+
+  "propertyTypes": [
+    { "id": "1", "value": "apartment", "label": "Stan" },
+    { "id": "2", "value": "house", "label": "Kuća" },
+    { "id": "3", "value": "local", "label": "Lokal" },
+    { "id": "4", "value": "plot", "label": "Plac" }
+  ],
+
+  "propertyStatuses": [
+    { "id": "1", "value": "active", "label": "Aktivna", "color": "green" },
+    { "id": "2", "value": "reserved", "label": "Rezervisana", "color": "yellow" },
+    { "id": "3", "value": "sold", "label": "Prodata", "color": "gray" },
+    { "id": "4", "value": "rented", "label": "Izdata", "color": "blue" }
+  ],
+
+  "reservationStatuses": [
+    { "id": "1", "value": "new", "label": "Nova", "color": "blue" },
+    { "id": "2", "value": "confirmed", "label": "Potvrđena", "color": "green" },
+    { "id": "3", "value": "completed", "label": "Obavljena", "color": "gray" },
+    { "id": "4", "value": "cancelled", "label": "Otkazana", "color": "red" }
+  ]
+}
