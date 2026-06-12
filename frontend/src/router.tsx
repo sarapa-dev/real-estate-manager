@@ -4,6 +4,7 @@ import AppLayout from "./components/layout/AppLayout"
 import LoginPage from "./pages/LoginPage"
 import DashboardPage from "./pages/DashboardPage"
 import PropertiesPage from "./pages/PropertiesPage"
+import PropertyDetailsPage from "./pages/PropertyDetailsPage"
 
 export const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ export const router = createBrowserRouter([
       {
         path: "properties",
         element: <PropertiesPage />,
+      },
+      {
+        path: "properties/:id",
+        element: <PropertyDetailsPage />,
       },
     ],
   },
