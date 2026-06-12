@@ -3,6 +3,7 @@ import ProtectedRoute from "./components/auth/ProtectedRoute"
 import AppLayout from "./components/layout/AppLayout"
 import LoginPage from "./pages/LoginPage"
 import DashboardPage from "./pages/DashboardPage"
+import PropertiesPage from "./pages/PropertiesPage"
 
 export const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ export const router = createBrowserRouter([
       {
         path: "dashboard",
         element: <DashboardPage />,
+      },
+      {
+        path: "properties",
+        element: <PropertiesPage />,
       },
     ],
   },
