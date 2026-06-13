@@ -5,12 +5,10 @@ import LoginPage from "./pages/LoginPage"
 import DashboardPage from "./pages/DashboardPage"
 import PropertiesPage from "./pages/PropertiesPage"
 import PropertyDetailsPage from "./pages/PropertyDetailsPage"
+import PropertyFormPage from "./pages/PropertyFormPage"
 
 export const router = createBrowserRouter([
-  {
-    path: "/login",
-    element: <LoginPage />,
-  },
+  { path: "/login", element: <LoginPage /> },
   {
     path: "/",
     element: (
@@ -23,18 +21,11 @@ export const router = createBrowserRouter([
         index: true,
         element: <Navigate to="/dashboard" replace />,
       },
-      {
-        path: "dashboard",
-        element: <DashboardPage />,
-      },
-      {
-        path: "properties",
-        element: <PropertiesPage />,
-      },
-      {
-        path: "properties/:id",
-        element: <PropertyDetailsPage />,
-      },
+      { path: "dashboard", element: <DashboardPage /> },
+      { path: "properties", element: <PropertiesPage /> },
+      { path: "properties/create", element: <PropertyFormPage /> },
+      { path: "properties/:id", element: <PropertyDetailsPage /> },
+      { path: "properties/:id/edit", element: <PropertyFormPage /> },
     ],
   },
 
