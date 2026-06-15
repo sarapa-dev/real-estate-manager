@@ -9,6 +9,9 @@ import PropertyFormPage from "./pages/PropertyFormPage"
 import ClientsPage from "./pages/ClientsPage"
 import ClientFormPage from "./pages/ClientFormPage"
 import ClientDetailsPage from "./pages/ClientDetailsPage"
+import ReservationsPage from "./pages/ReservationsPage"
+import ReservationFormPage from "./pages/ReservationFormPage"
+import ReservationDetailsPage from "./pages/ReservationDetailsPage"
 
 export const router = createBrowserRouter([
   { path: "/login", element: <LoginPage /> },
@@ -35,6 +38,10 @@ export const router = createBrowserRouter([
       { path: "clients/create", element: <ClientFormPage /> },
       { path: "clients/:id", element: <ClientDetailsPage /> },
       { path: "clients/:id/edit", element: <ClientFormPage /> },
+
+      { path: "reservations", element: <ReservationsPage /> },
+      { path: "reservations/create", element: <ReservationFormPage /> },
+      { path: "reservations/:id", element: <ReservationDetailsPage /> },
     ],
   },
 
