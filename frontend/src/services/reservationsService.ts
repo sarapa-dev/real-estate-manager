@@ -10,17 +10,13 @@ export const reservationsService = {
   },
 
   async getByPropertyId(propertyId: string): Promise<Reservation[]> {
-    const { data } = await apiClient.get<Reservation[]>("/reservations", {
-      params: { propertyId },
-    })
-    return data
+    const { data } = await apiClient.get<Reservation[]>("/reservations")
+    return data.filter((r) => r.propertyId === propertyId)
   },
 
   async getByClientId(clientId: string): Promise<Reservation[]> {
-    const { data } = await apiClient.get<Reservation[]>("/reservations", {
-      params: { clientId },
-    })
-    return data
+    const { data } = await apiClient.get<Reservation[]>("/reservations")
+    return data.filter((r) => r.clientId === clientId)
   },
 
   async getById(id: string): Promise<Reservation> {
