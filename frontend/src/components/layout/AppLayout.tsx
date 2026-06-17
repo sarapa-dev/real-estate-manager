@@ -215,7 +215,7 @@ export default function AppLayout() {
       <SidebarInset>
         <header className="flex h-14 shrink-0 items-center gap-3 border-b bg-background px-4">
           <SidebarTrigger className="-ml-1" />
-          <Separator orientation="vertical" className="h-4" />
+          <Separator orientation="vertical" />
           <AppBreadcrumb />
           <div className="ml-auto">
             <ModeToggle />
