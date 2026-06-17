@@ -176,12 +176,12 @@ export default function ClientsPage() {
           />
         </div>
 
-        <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+        <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-4">
           <Select
             value={toSel(filters.interestType)}
             onValueChange={(v) => updateFilter("interestType", fromSel(v))}
           >
-            <SelectTrigger>
+            <SelectTrigger className="w-full">
               <SelectValue placeholder="Interesovanje" />
             </SelectTrigger>
             <SelectContent>
@@ -195,7 +195,7 @@ export default function ClientsPage() {
             value={toSel(filters.city)}
             onValueChange={(v) => updateFilter("city", fromSel(v))}
           >
-            <SelectTrigger>
+            <SelectTrigger className="w-full">
               <SelectValue placeholder="Grad" />
             </SelectTrigger>
             <SelectContent>
