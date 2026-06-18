@@ -12,6 +12,7 @@ import ClientDetailsPage from "./pages/ClientDetailsPage"
 import ReservationsPage from "./pages/ReservationsPage"
 import ReservationFormPage from "./pages/ReservationFormPage"
 import ReservationDetailsPage from "./pages/ReservationDetailsPage"
+import SettingsPage from "./pages/SettingsPage"
 
 export const router = createBrowserRouter([
   { path: "/login", element: <LoginPage /> },
@@ -42,6 +43,8 @@ export const router = createBrowserRouter([
       { path: "reservations", element: <ReservationsPage /> },
       { path: "reservations/create", element: <ReservationFormPage /> },
       { path: "reservations/:id", element: <ReservationDetailsPage /> },
+
+      { path: "settings", element: <SettingsPage /> },
     ],
   },
 
