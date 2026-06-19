@@ -108,5 +108,24 @@ GET /properties?_page=1&_per_page=10
 # Filtriranje rezervacija po nekretnini
 GET /reservations?propertyId=1
 ```
+
 Kompletna dokumentacija JSON Server-a dostupna je na sledećem [linku](https://github.com/typicode/json-server#readme)
 
+---
+
+### Desktop slike ekrana
+
+<img width="1919" height="942" alt="Image" src="https://github.com/user-attachments/assets/4add4b5f-d84f-4af3-9d24-36c7eb9a763d" />
+<img width="1903" height="1079" alt="Image" src="https://github.com/user-attachments/assets/42c225c9-ef83-4dca-a9b2-80663091428d" />
+<img width="1903" height="1079" alt="Image" src="https://github.com/user-attachments/assets/0963ac3a-1080-4058-ad8c-6a7eed39c3ba" />
+<img width="1917" height="1079" alt="Image" src="https://github.com/user-attachments/assets/d13051a9-eebe-4ba9-aa82-3fe229d609da" />
+<img width="1918" height="1079" alt="Image" src="https://github.com/user-attachments/assets/4fb37e70-9206-406b-8707-13501a8b094c" />
+
+---
+
+### Mobilni prikaz
+
+<img width="475" height="1079" alt="Image" src="https://github.com/user-attachments/assets/5ec8038e-58dc-43cb-8680-ba76b04690b7" />
+<img width="445" height="1079" alt="Image" src="https://github.com/user-attachments/assets/92f8c28f-6027-4412-a036-394bdad20137" />
+<img width="457" height="1079" alt="Image" src="https://github.com/user-attachments/assets/13bf7553-9d8b-470f-9ec0-77e4681ea0c8" />
+<img width="528" height="942" alt="Image" src="https://github.com/user-attachments/assets/a64edfdc-219f-4d72-b809-e2bb44f6f51a" />
