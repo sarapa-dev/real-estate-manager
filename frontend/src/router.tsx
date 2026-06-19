@@ -12,6 +12,7 @@ import ClientDetailsPage from "./pages/ClientDetailsPage"
 import ReservationsPage from "./pages/ReservationsPage"
 import ReservationFormPage from "./pages/ReservationFormPage"
 import ReservationDetailsPage from "./pages/ReservationDetailsPage"
+import CalendarPage from "./pages/CalendarPage"
 import SettingsPage from "./pages/SettingsPage"
 
 export const router = createBrowserRouter([
@@ -44,6 +45,7 @@ export const router = createBrowserRouter([
       { path: "reservations/create", element: <ReservationFormPage /> },
       { path: "reservations/:id", element: <ReservationDetailsPage /> },
 
+      { path: "calendar", element: <CalendarPage /> },
       { path: "settings", element: <SettingsPage /> },
     ],
   },
