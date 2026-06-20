@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react"
+import { useEffect, useState } from "react"
 import { Link, useNavigate } from "react-router"
 import {
   Plus,
@@ -94,10 +94,7 @@ export default function ClientsPage() {
       .catch(() => {})
   }, [])
 
-  const filtered = useMemo(
-    () => applyClientFilters(clients, filters),
-    [clients, filters]
-  )
+  const filtered = applyClientFilters(clients, filters)
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / PER_PAGE))
   const paginated = filtered.slice(

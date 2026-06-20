@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react"
+import { useState } from "react"
 import { Link, useNavigate } from "react-router"
 import {
   Plus,
@@ -102,10 +102,10 @@ export default function PropertiesPage() {
   const [deleteId, setDeleteId] = useState<string | null>(null)
   const [isDeleting, setIsDeleting] = useState(false)
 
-  // ─── Derived data ──────────────────────────────────────────────
-  const filtered = useMemo(
-    () => applySorting(applyFilters(properties, filters), sortField, sortDir),
-    [properties, filters, sortField, sortDir]
+  const filtered = applySorting(
+    applyFilters(properties, filters),
+    sortField,
+    sortDir
   )
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / PER_PAGE))

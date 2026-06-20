@@ -394,7 +394,7 @@ function StatusTab({
       .then(setItems)
       .catch(() => toast.error("Greška pri učitavanju."))
       .finally(() => setIsLoading(false))
-  }, [])
+  }, [loadFn])
 
   async function handleAdd() {
     const v = newValue.trim().toLowerCase().replace(/\s+/g, "_")

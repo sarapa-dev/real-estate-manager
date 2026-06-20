@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { Link, useNavigate, useParams } from "react-router"
-import { useForm, Controller, type Resolver } from "react-hook-form"
+import { useForm, Controller, type Resolver, useWatch } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { z } from "zod"
 import { toast } from "sonner"
@@ -137,7 +137,11 @@ function FormSkeleton() {
     <div className="space-y-5">
       <Skeleton className="h-7 w-52" />
       {[180, 140, 200, 120, 160, 100].map((h, i) => (
-        <Skeleton key={i} className={`h-[${h}px] w-full rounded-lg`} />
+        <Skeleton
+          key={i}
+          className="w-full rounded-lg"
+          style={{ height: `${h}px` }}
+        />
       ))}
     </div>
   )
@@ -155,7 +159,6 @@ export default function PropertyFormPage() {
     register,
     handleSubmit,
     control,
-    watch,
     reset,
     formState: { errors, isSubmitting },
   } = useForm<FormData>({
@@ -219,8 +222,10 @@ export default function PropertyFormPage() {
       .finally(() => setIsLoadingProperty(false))
   }, [id, isEditMode, reset])
 
-  const watchedPrice = watch("price")
-  const watchedSqm = watch("squareMeters")
+  const watchedPrice = useWatch({ control, name: "price" })
+  const watchedSqm = useWatch({ control, name: "squareMeters" })
+  const watchedCurrency = useWatch({ control, name: "currency" })
+
   const pricePerM2 =
     watchedPrice > 0 && watchedSqm > 0
       ? Math.round(Number(watchedPrice) / Number(watchedSqm))
@@ -514,7 +519,7 @@ export default function PropertyFormPage() {
             <div className="rounded-md bg-muted px-3 py-2 text-sm">
               Cena po m²:{" "}
               <span className="font-semibold">
-                {pricePerM2} {watch("currency")}/m²
+                {pricePerM2} {watchedCurrency}/m²
               </span>
             </div>
           )}

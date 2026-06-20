@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react"
+import { useEffect, useState } from "react"
 import { Link, useNavigate } from "react-router"
 import {
   Plus,
@@ -137,10 +137,11 @@ export default function ReservationsPage() {
   )
   const [isChangingStatus, setIsChangingStatus] = useState(false)
 
-  const filtered = useMemo(
-    () =>
-      applyReservationFilters(reservations, filters, clientMap, propertyMap),
-    [reservations, filters, clientMap, propertyMap]
+  const filtered = applyReservationFilters(
+    reservations,
+    filters,
+    clientMap,
+    propertyMap
   )
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / PER_PAGE))

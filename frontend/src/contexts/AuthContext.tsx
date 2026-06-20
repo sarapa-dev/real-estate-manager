@@ -1,10 +1,5 @@
-import {
-  createContext,
-  useContext,
-  useEffect,
-  useState,
-  type ReactNode,
-} from "react"
+/* eslint-disable react-refresh/only-export-components */
+import { createContext, useContext, useState, type ReactNode } from "react"
 import apiClient from "../services/apiClient"
 import type { User, SafeUser } from "../types/user"
 
@@ -35,13 +30,8 @@ function getStoredUser(): SafeUser | null {
 }
 
 export function AuthProvider({ children }: { children: ReactNode }) {
-  const [user, setUser] = useState<SafeUser | null>(null)
-  const [isLoading, setIsLoading] = useState(true)
-
-  useEffect(() => {
-    setUser(getStoredUser())
-    setIsLoading(false)
-  }, [])
+  const [user, setUser] = useState<SafeUser | null>(getStoredUser)
+  const [isLoading] = useState(false)
 
   const login = async (email: string, password: string): Promise<SafeUser> => {
     const { data } = await apiClient.get<User[]>("/users", {
@@ -58,6 +48,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       throw new Error("Pogrešan email ili lozinka.")
     }
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { password: _password, ...safeUser } = matchedUser
 
     localStorage.setItem(USER_STORAGE_KEY, JSON.stringify(safeUser))

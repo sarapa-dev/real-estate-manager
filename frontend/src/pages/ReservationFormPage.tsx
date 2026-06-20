@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { Link, useNavigate, useSearchParams } from "react-router"
-import { useForm, Controller, type Resolver } from "react-hook-form"
+import { useForm, Controller, type Resolver, useWatch } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { z } from "zod"
 import { toast } from "sonner"
@@ -158,7 +158,6 @@ export default function ReservationFormPage() {
     register,
     handleSubmit,
     control,
-    watch,
     formState: { errors, isSubmitting },
   } = useForm<FormData>({
     resolver: zodResolver(schema) as unknown as Resolver<FormData>,
@@ -191,8 +190,8 @@ export default function ReservationFormPage() {
       .finally(() => setDataLoading(false))
   }, [prefilledPropertyId, prefilledClientId])
 
-  const watchedPropertyId = watch("propertyId")
-  const watchedClientId = watch("clientId")
+  const watchedPropertyId = useWatch({ control, name: "propertyId" })
+  const watchedClientId = useWatch({ control, name: "clientId" })
 
   useEffect(() => {
     const found = properties.find((p) => p.id === watchedPropertyId) ?? null

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react"
+import { useEffect, useState } from "react"
 import { Link, useNavigate } from "react-router"
 import {
   format,
@@ -225,31 +225,25 @@ export default function CalendarPage() {
       .finally(() => setIsLoading(false))
   }, [])
 
-  const filtered = useMemo(
-    () =>
-      reservations.filter((r) => !statusFilter || r.status === statusFilter),
-    [reservations, statusFilter]
+  const filtered = reservations.filter(
+    (r) => !statusFilter || r.status === statusFilter
   )
 
-  const byDate = useMemo(() => {
-    const map: Record<string, EnrichedReservation[]> = {}
-    filtered.forEach((r) => {
-      if (!map[r.date]) map[r.date] = []
-      map[r.date].push(r)
-    })
-    Object.values(map).forEach((list) =>
-      list.sort((a, b) => a.time.localeCompare(b.time))
-    )
-    return map
-  }, [filtered])
+  const byDate: Record<string, EnrichedReservation[]> = {}
+
+  filtered.forEach((r) => {
+    if (!byDate[r.date]) byDate[r.date] = []
+    byDate[r.date].push(r)
+  })
+
+  Object.values(byDate).forEach((list) =>
+    list.sort((a, b) => a.time.localeCompare(b.time))
+  )
 
   const selectedDateStr = format(selectedDate, "yyyy-MM-dd")
   const selectedDayItems = byDate[selectedDateStr] ?? []
 
-  const calendarDays = useMemo(
-    () => buildCalendarDays(currentMonth),
-    [currentMonth]
-  )
+  const calendarDays = buildCalendarDays(currentMonth)
 
   function openStatusModal(r: EnrichedReservation) {
     setStatusTarget(r)
