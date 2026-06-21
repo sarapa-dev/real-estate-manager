@@ -30,4 +30,11 @@ export default defineConfig([
       "react-hooks/set-state-in-effect": "off",
     },
   },
+  {
+    // needed to skip warning in eslint, since use lazy loading
+    files: ["**/router.tsx", "**/routes.tsx"],
+    rules: {
+      "react-refresh/only-export-components": "off",
+    },
+  },
 ])

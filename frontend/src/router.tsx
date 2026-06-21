@@ -1,19 +1,35 @@
+import { lazy, Suspense } from "react"
 import { createBrowserRouter, Navigate } from "react-router"
 import ProtectedRoute from "./components/auth/ProtectedRoute"
 import AppLayout from "./components/layout/AppLayout"
+import { Skeleton } from "@/components/ui/skeleton"
+
+// left login page as regular import since its entry point for new users
 import LoginPage from "./pages/LoginPage"
-import DashboardPage from "./pages/DashboardPage"
-import PropertiesPage from "./pages/PropertiesPage"
-import PropertyDetailsPage from "./pages/PropertyDetailsPage"
-import PropertyFormPage from "./pages/PropertyFormPage"
-import ClientsPage from "./pages/ClientsPage"
-import ClientFormPage from "./pages/ClientFormPage"
-import ClientDetailsPage from "./pages/ClientDetailsPage"
-import ReservationsPage from "./pages/ReservationsPage"
-import ReservationFormPage from "./pages/ReservationFormPage"
-import ReservationDetailsPage from "./pages/ReservationDetailsPage"
-import CalendarPage from "./pages/CalendarPage"
-import SettingsPage from "./pages/SettingsPage"
+
+const DashboardPage = lazy(() => import("./pages/DashboardPage"))
+const PropertiesPage = lazy(() => import("./pages/PropertiesPage"))
+const PropertyDetailsPage = lazy(() => import("./pages/PropertyDetailsPage"))
+const PropertyFormPage = lazy(() => import("./pages/PropertyFormPage"))
+const ClientsPage = lazy(() => import("./pages/ClientsPage"))
+const ClientFormPage = lazy(() => import("./pages/ClientFormPage"))
+const ClientDetailsPage = lazy(() => import("./pages/ClientDetailsPage"))
+const ReservationsPage = lazy(() => import("./pages/ReservationsPage"))
+const ReservationFormPage = lazy(() => import("./pages/ReservationFormPage"))
+const ReservationDetailsPage = lazy(
+  () => import("./pages/ReservationDetailsPage")
+)
+const CalendarPage = lazy(() => import("./pages/CalendarPage"))
+const SettingsPage = lazy(() => import("./pages/SettingsPage"))
+
+function PageLoader() {
+  return (
+    <div className="space-y-4 p-6">
+      <Skeleton className="h-8 w-1/4" />
+      <Skeleton className="h-40 w-full rounded-lg" />
+    </div>
+  )
+}
 
 export const router = createBrowserRouter([
   { path: "/login", element: <LoginPage /> },
@@ -21,7 +37,9 @@ export const router = createBrowserRouter([
     path: "/",
     element: (
       <ProtectedRoute>
-        <AppLayout />
+        <Suspense fallback={<PageLoader />}>
+          <AppLayout />
+        </Suspense>
       </ProtectedRoute>
     ),
     children: [
